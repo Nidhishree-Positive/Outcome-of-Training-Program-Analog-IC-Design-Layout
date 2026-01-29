@@ -242,8 +242,54 @@ This feature allows designers to extract precise metrics from simulations, verif
 
 <img width="659" height="602" alt="image" src="https://github.com/user-attachments/assets/ce7dabaa-0499-42b5-9160-2d40a9a4b82e" />
 
-**Basic BJT-based temperature-independent bandgap reference, often called a first-order or classic BGR**
+#### Basic BJT-based temperature-independent bandgap reference, often called a first-order or classic BGR
 
+ Here
+ #### Vref = V_BE2 + V_T* ln(n)  *(1+R_2/R_3) - (1)
+
+let R_1=R_2=10k ohm
+
+**For zero temperature coefficient (zero TC)  ln(n) * (1+R_2/R_3) = 17.2**
+
+for **n=10**, **R_2=10k ohm**
+
+(1+10*10^3/R_3) = 17.2/ln(10)
+**R_3= 1.545 k ohm**
+
+
+Thus we have designed the circuit 
+
+
+differentiate the equation (1) with respect to temperature ,we get
+
+deriv(vref) = deriv(V_BE2) + deriv(V_T* ln(n) ) *(1+R_2/R_3)
+deriv(vref) = deriv(CTAT) + deriv(PTAT) *(1+R_2/R_3)
+
+using the cademce calculator we have obtain the derivative of  PTAT and derivative of CTAT
+deriv(CTAT) = -1.71*10^-3 v/celcius
+deriv(PTAT) = 202.2*10^-6 v/celcius
+
+<img width="995" height="633" alt="image" src="https://github.com/user-attachments/assets/dbb80ed4-9452-4403-b829-fbb64cdcf797" />
+
+for **R_3= 1.545k ohm**, **R_2=10k ohm**
+we get deriv(vref)= -1.9906 *10^-6
+
+so we need to design more accurate one by varying (1+R_2/R_3)
+
+so to make deriv(vref) = 0
+ 0 = deriv(CTAT) + deriv(PTAT) *(1+R_2/R_3)
+ 0= -1.71*10^-3 + 202.2*10^-6 *(1+R_2/R_3)
+ (1+R_2/R_3) = 8.4569
+ let keep R_2=10k ohm itself
+ then **R_3= 1.34102 k ohm **
+
+ Now we get **deriv(vref)=-19.66 uV/celcius**
+ 
+
+
+
+
+ 
 
 
 
