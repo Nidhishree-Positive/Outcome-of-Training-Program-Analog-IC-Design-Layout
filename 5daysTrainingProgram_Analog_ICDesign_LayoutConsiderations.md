@@ -36,7 +36,7 @@ If a circuit directly relies on the power supply or raw transistor parameters, i
 
 Among all reference circuits, the ****Bandgap Reference (BGR)**** is the most widely used and trusted solution in integrated circuits.
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -47,7 +47,7 @@ A Bandgap Voltage Reference (BGR) is a precision analog circuit that generates a
 By exploiting the temperature-dependent characteristics of semiconductor devices, the BGR achieves excellent immunity to environmental and electrical variations, making it one of the most indispensable reference circuits in integrated circuit design.
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Why Is It Called a “Bandgap” Reference?
@@ -63,7 +63,7 @@ In a BGR circuit, the reference voltage is intentionally designed to be close to
 This connection gives the BGR a strong physical foundation, making it inherently stable and repeatable across different IC fabrication processes.
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Why Is BGR So Important in IC Design?
@@ -257,7 +257,7 @@ for **n=10**, **R_2=10k ohm**
 **R_3= 1.545 k ohm**
 
 
-Thus we have designed the circuit 
+Thus we have designed for the basic BGR circuit 
 
 
 differentiate the equation (1) with respect to temperature ,we get
@@ -284,7 +284,7 @@ so to make deriv(vref) = 0
  let keep R_2=10k ohm itself
  then **R_3= 1.34102 k ohm **
 
- Now we get **deriv(vref)=-19.66 uV/celcius**
+ Now we get,   **deriv(vref)=-19.66 uV/celcius**
  
 
 
