@@ -14,7 +14,7 @@
 
 - Introduction to the Cadence Virtuoso tool
 
-- -on exposure to the Cadence design environment
+- on exposure to the Cadence design environment
 
 
 
