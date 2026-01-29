@@ -141,7 +141,7 @@ reference (VREF ) that has a nominally zero temperature coefficient.,
 
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -212,7 +212,7 @@ We started with a simple resistor-MOSFET circuit and created its schematic in Ca
 - Measurements in Cadence
 - Performing calculations in Cadence
 - Analysis of a few BGR architectures
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ####  Circuit  Measurement in cadence
 
 
@@ -224,7 +224,7 @@ In analog IC design, circuit measurements such as **Signal-to-Noise Ratio (SNR),
 
 this is the spectrum of ota being designed in the previous session and in the outputs we can observe the different measurement at output panel 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ####  Calculator Performance in Cadence
 
 
@@ -269,7 +269,8 @@ using the cademce calculator we have obtain the derivative of  PTAT and derivati
 deriv(CTAT) = -1.71*10^-3 v/celcius
 deriv(PTAT) = 202.2*10^-6 v/celcius
 
-<img width="995" height="633" alt="image" src="https://github.com/user-attachments/assets/dbb80ed4-9452-4403-b829-fbb64cdcf797" />
+<img width="505" height="631" alt="image" src="https://github.com/user-attachments/assets/c2eac4e5-e724-46e7-993d-8bd90cd2ff59" />
+
 
 for **R_3= 1.545k ohm**, **R_2=10k ohm**
 we get deriv(vref)= -1.9906 *10^-6
