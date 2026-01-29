@@ -197,14 +197,55 @@ We started with a simple resistor-MOSFET circuit and created its schematic in Ca
 
 <img width="542" height="468" alt="image" src="https://github.com/user-attachments/assets/d19ca60e-75a2-47a5-be7f-c568bc0c00aa" />
 
+### AC Analysis
 
 
+# Day-2
 
+### Topics covered
 
+- Analysis using Cadence for MOSFET-based circuits (single-stage circuits and differential amplifier)
 
+- Symbol creation for a differential amplifier
 
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Building on the previous day’s simple amplifier, the resistive load was replaced with a PMOS load to analyze MOSFET-based active loading.
+<img width="640" height="537" alt="image" src="https://github.com/user-attachments/assets/72515dd8-7469-42ff-99d9-1b024cf6aad1" />
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+In the previous circuit, the diode-connected PMOS was replaced by an externally biased PMOS. Since the PMOS threshold voltage **V_th_p is −561.778 mV** and the source voltage of pmos**V_s_p is 1v = Vdd** thus using this we need to calculte the value of vbias so that ass the circuit will be saturation region 
 
+Thus, to turn on the pmos V_sg_p>|vth_p| 
+by substituting the above values we get vg_p=v_bias<0.439
+
+so let's consider vb=0.4v
+and run and obtain the region in which each transistors is opearting and wegot to know that both are in rgion-2 whihch is saturation region
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+we designed a differentila amplifier
+here **v_th_n = 587.807mv and v_th_p=-573.335 mv**
+thus lets consider transitor 5(M_5) 
+here to turn on M5 V_gs_n5>v_th_n
+vg_5 - vs_5 > 587.807mv
+here vs_5 =0v
+thus vg_5  > 587.807mv
+
+so let us consider **vg_5 = 0.6v = 600 mv**
+
+for vm1 keeping 1.2v we run the schemtaic and except M5 all other are in sub-threshold region and M_5 is in saturaton region  so here we goit v_A which is drain of M_5  as 0.6587v 
+
+for M_3 ,
+V_gs_n3 > v_th_n
+vg_3 - vs_3 > 587.807mv
+here vs_3=v_A = 0.6587v
+thus vg_3  > 1.2466 v
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Creation of Symbol
+
+The designed differential amplifier was converted into a symbol and reused at the top level. The same input signals and biasing conditions as the original differential amplifier were applied, and the simulation results obtained using the symbol matched the original circuit behavior, thereby validating the symbol creation.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Day - 3
 
 ### Topics covered 
