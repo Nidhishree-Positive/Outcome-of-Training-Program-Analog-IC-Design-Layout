@@ -137,6 +137,9 @@ reference (VREF ) that has a nominally zero temperature coefficient.,
 
 
 
+
+
+
 ### Other Devices That Exhibit PTAT / CTAT Behavior
 
 BJTs are not the only devices, but they are the most reliable. Other options include:
@@ -164,15 +167,17 @@ Exhibit CTAT behavior - Less controllable than BJTs
 
 
 
-
-
-
+Bandgap Reference (BGR) circuits are implemented using different architectures based on design requirements such as supply voltage, power consumption, accuracy, temperature coefficient, and process technology. Accordingly, various BGR architectures like conventional BJT-based bandgap references, CMOS bandgap references, sub-bandgap (low-voltage) references, curvature-compensated bandgaps, and resistor-less bandgaps are used. The choice of architecture depends on the target application and performance constraints.
 
 
 
 
 
 In the afternoon session a basic overview of the Cadence Virtuoso environment was provided, followed by an initial hands-on session to understand the tool interface and basic circuit implementation.
+
+
+
+
 
 
 
