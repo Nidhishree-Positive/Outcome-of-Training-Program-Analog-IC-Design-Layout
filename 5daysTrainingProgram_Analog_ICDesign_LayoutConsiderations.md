@@ -121,16 +121,20 @@ CTAT quantity (Negative TC):
 
 Hence **it is CTAT (Complementary To Absolute Temperature)**
 
-Core idea:
+**Core idea:**
 By adding a scaled PTAT voltage to a CTAT voltage, their temperature variations cancel each other.
 
-Result:
+**Result:**
 The combined voltage exhibits an approximately zero temperature coefficient, forming a temperature-independent voltage reference.
 
 
 With the negative- and positive-TC voltages obtained, we can now develop a
 reference (VREF ) that has a nominally zero temperature coefficient.,
 ### V_REF = α1 *VBE + α2(VT * ln(n))
+
+
+
+
 
 
 
