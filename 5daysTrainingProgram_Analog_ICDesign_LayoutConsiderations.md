@@ -179,6 +179,12 @@ Bandgap Reference (BGR) circuits are implemented using different architectures b
 
 In the afternoon session a basic overview of the Cadence Virtuoso environment was provided, followed by an initial hands-on session to understand the tool interface and basic circuit implementation.
 
+We started with a simple resistor-MOSFET circuit and created its schematic in Cadence Virtuoso. Basic simulations including DC, Transient, and AC analyses were performed to understand circuit behavior and gain familiarity with the tool interface.
+
+
+
+<img width="542" height="468" alt="image" src="https://github.com/user-attachments/assets/d19ca60e-75a2-47a5-be7f-c568bc0c00aa" />
+
 
 
 
