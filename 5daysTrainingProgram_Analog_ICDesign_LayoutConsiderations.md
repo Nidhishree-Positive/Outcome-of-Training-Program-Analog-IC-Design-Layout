@@ -16,7 +16,7 @@
 
 - on exposure to the Cadence design environment
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 In the morning session, we were introduced to Analog design, Digital design, and Mixed-Signal design, with a primary focus on Analog IC Design. The session mainly emphasized the introduction and basics of Bandgap Reference (BGR) circuits, their purpose, and their importance in analog IC applications.
 
@@ -184,7 +184,7 @@ Bandgap Reference (BGR) circuits are implemented using different architectures b
 
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
