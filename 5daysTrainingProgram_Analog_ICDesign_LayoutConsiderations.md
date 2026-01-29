@@ -20,6 +20,7 @@
 
 In the morning session, we were introduced to Analog design, Digital design, and Mixed-Signal design, with a primary focus on Analog IC Design. The session mainly emphasized the introduction and basics of Bandgap Reference (BGR) circuits, their purpose, and their importance in analog IC applications.
 
+
 **Introduction to basic BGR circuits**
 
 Every electronic system—whether it is a mobile phone, a medical device, an automotive controller, or a satellite—depends on stable voltages and currents to function correctly. However, real-world conditions are never stable. Supply voltage fluctuates, temperature changes continuously, and semiconductor device parameters drift due to process variations and aging.
@@ -35,11 +36,15 @@ If a circuit directly relies on the power supply or raw transistor parameters, i
 Among all reference circuits, the ****Bandgap Reference (BGR)**** is the most widely used and trusted solution in integrated circuits.
 
 
+
+
 **What Is a Bandgap Reference (BGR)?**
 
 A Bandgap Voltage Reference (BGR) is a precision analog circuit that generates a fixed and stable reference voltage, which remains nearly constant despite variations in power supply, temperature, and circuit loading conditions
 
 By exploiting the temperature-dependent characteristics of semiconductor devices, the BGR achieves excellent immunity to environmental and electrical variations, making it one of the most indispensable reference circuits in integrated circuit design.
+
+
 
 **Why Is It Called a “Bandgap” Reference?**
 
@@ -52,6 +57,8 @@ When expressed ****in voltage form&****, this energy corresponds to about ****1.
 In a BGR circuit, the reference voltage is intentionally designed to be close to this value. Although the circuit does not directly measure the bandgap energy, its output voltage is numerically related to it. Hence, the term “bandgap reference.”
 
 This connection gives the BGR a strong physical foundation, making it inherently stable and repeatable across different IC fabrication processes.
+
+
 
 ****Why Is BGR So Important in IC Design?****
 
@@ -70,6 +77,8 @@ The Bandgap Reference acts as the heart of an integrated circuit. Once a stable 
 Without a reliable BGR, achieving accuracy, repeatability, and robustness in modern ICs would be nearly impossible.
 
 In fact, most high-performance chips contain multiple bandgap references, each optimized for different accuracy, power, or area requirements.
+
+
 
 **Temperature-Independent Reference**
 
