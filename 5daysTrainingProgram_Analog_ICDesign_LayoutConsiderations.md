@@ -127,10 +127,16 @@ By adding a scaled PTAT voltage to a CTAT voltage, their temperature variations 
 **Result:**
 The combined voltage exhibits an approximately zero temperature coefficient, forming a temperature-independent voltage reference.
 
+<img width="810" height="598" alt="image" src="https://github.com/user-attachments/assets/50e019fa-edd9-445f-a389-1ff08d382e3a" />
+
+
 
 With the negative- and positive-TC voltages obtained, we can now develop a
 reference (VREF ) that has a nominally zero temperature coefficient.,
 ### V_REF = α1 *VBE + α2(VT * ln(n))
+
+
+
 
 
 
@@ -184,6 +190,69 @@ We started with a simple resistor-MOSFET circuit and created its schematic in Ca
 
 
 <img width="542" height="468" alt="image" src="https://github.com/user-attachments/assets/d19ca60e-75a2-47a5-be7f-c568bc0c00aa" />
+
+
+
+
+
+
+
+
+
+# Day - 3
+
+### Topics covered 
+
+- Measurements in Cadence
+- Performing calculations in Cadence
+- Analysis of a few BGR architectures
+
+####  Circuit  Measurement in cadence
+
+
+In analog IC design, circuit measurements such as **Signal-to-Noise Ratio (SNR), Spurious-Free Dynamic Range (SFDR), and Total Harmonic Distortion (THD)** are critical to evaluate the performance of a circuit. These metrics quantify how well a circuit preserves the input signal while minimizing noise, distortion, and spurious components. The input signal plays a major role in these measurements—its amplitude, frequency, and waveform directly affect the observed performance. Such analysis ensures circuits are linear, noise-resilient, and suitable for their intended applications, with typical target ranges like **SNR > 60 dB, SFDR > 70–80 dB, and THD < 1%** depending on design requirements, though exact values depend on the application and design specifications. Proper measurement and analysis ensure that the circuit meets its intended performance in real-world operation.
+
+
+
+<img width="1600" height="900" alt="measurementSpectrumCRT4SYM" src="https://github.com/user-attachments/assets/87c504e2-bfd6-4842-9aac-d39eb74c40ac" />
+
+this is the spectrum of ota being designed in the previous session and in the outputs we can observe the different measurement at output panel 
+
+
+####  Calculator Performance in Cadence
+
+
+In Cadence, the calculator (also called the Calculator Window) is used to compute and analyze custom expressions based on simulation results. Designers can calculate ratios, sums, differences, derivatives, integrals, or any mathematical function of node voltages, currents, or simulation outputs. For example:
+
+Expression evaluation: V(out)/V(in) to get gain
+
+Derivative: d(V(out))/dt to get slew rate or transient slope
+
+Other operations: FFT, RMS, min/max, or combining multiple measurements
+
+This feature allows designers to extract precise metrics from simulations, verify design behavior.Basically, the Cadence calculator is a versatile tool to extract any performance metric or derived quantity from your simulation, making it essential for detailed circuit analysis.
+
+## BGR basic architecture design and anlysis
+
+<img width="659" height="602" alt="image" src="https://github.com/user-attachments/assets/ce7dabaa-0499-42b5-9160-2d40a9a4b82e" />
+
+**Basic BJT-based temperature-independent bandgap reference, often called a first-order or classic BGR**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
