@@ -1,8 +1,8 @@
-#**Day 1**
+#**Day 1**#
 
 
 
-##****Topics Covered****
+##****Topics Covered****##
 
 - Introduction to the 5 Days Training Program on Analog IC Design & Layout Considerations
 
