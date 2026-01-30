@@ -228,13 +228,16 @@ Building on the previous day’s simple amplifier, the resistive load was replac
 
 
 #### Transient responce
-<img width="862" height="677" alt="image" src="https://github.com/user-attachments/assets/57d83a71-2b7d-4fe9-a346-c6125a57adde" />
+<img width="489" height="322" alt="image" src="https://github.com/user-attachments/assets/b1e5c15d-f974-4bc0-a993-acd4baa9e780" />
+
 
 #### DC responce 
-<img width="862" height="677" alt="image" src="https://github.com/user-attachments/assets/da0a7764-7f38-4970-a84e-362427d7da11" />
+<img width="499" height="327" alt="image" src="https://github.com/user-attachments/assets/c148519e-af24-4e11-8c19-db2cd00c9ddc" />
+
 
 #### AC responce
-<img width="862" height="677" alt="image" src="https://github.com/user-attachments/assets/0a4c20a8-5d40-478d-baa2-a81658f7f692" />
+<img width="481" height="317" alt="image" src="https://github.com/user-attachments/assets/57dec03e-16be-4490-a2ab-8eaf14fb7d9d" />
+
 
 Before we got vout =0.435v so now our goal is to get vout=0.5v hence by avrying width of pmos we can vary its resistance hence a parametric anlysis is done to obtain the corrsponding for whcih vout is 0.5v
 <img width="1000" height="649" alt="image" src="https://github.com/user-attachments/assets/ebc382fb-2c1b-4605-8400-dc83936675f2" />
