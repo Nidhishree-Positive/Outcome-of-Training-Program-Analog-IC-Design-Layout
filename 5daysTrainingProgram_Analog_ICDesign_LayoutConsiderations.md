@@ -251,6 +251,8 @@ from above plot we observed for a **w of 1um**we will get nearly 0.5v.
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+<img width="729" height="648" alt="image" src="https://github.com/user-attachments/assets/c61cd9a0-43a3-4e0c-ad2a-f58e55d15085" />
+
 In the previous circuit, the diode-connected PMOS was replaced by an externally biased PMOS. Since the PMOS threshold voltage **V_th_p is −561.778 mV** and the source voltage of pmos**V_s_p is 1v = Vdd** thus using this we need to calculte the value of vbias so that ass the circuit will be saturation region 
 
 Thus, to turn on the pmos V_sg_p>|vth_p| 
@@ -258,6 +260,9 @@ by substituting the above values we get vg_p=v_bias<0.439
 
 so let's consider vb=0.4v
 and run and obtain the region in which each transistors is opearting and wegot to know that both are in rgion-2 whihch is saturation region
+
+<img width="986" height="673" alt="image" src="https://github.com/user-attachments/assets/3efdaab2-6e17-4b1b-b01e-3348b73d0987" />
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 we designed a differentila amplifier
