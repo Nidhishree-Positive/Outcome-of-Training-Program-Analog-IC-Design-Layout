@@ -1,4 +1,4 @@
-# Day 1
+<img width="507" height="654" alt="image" src="https://github.com/user-attachments/assets/572a9018-8caf-4b35-9c4e-4c4321cf77b7" /><img width="519" height="638" alt="image" src="https://github.com/user-attachments/assets/05224bae-7d85-4cbf-9f42-8e5b2a929c67" /># Day 1
 
 
 
@@ -195,10 +195,23 @@ We started with a simple resistor-MOSFET circuit and created its schematic in Ca
 
 
 
-<img width="542" height="468" alt="image" src="https://github.com/user-attachments/assets/d19ca60e-75a2-47a5-be7f-c568bc0c00aa" />
+<img width="605" height="467" alt="image" src="https://github.com/user-attachments/assets/62e2c40e-8ca6-433f-bec4-c0ec82560e97" />
 
-### AC Analysis
+### Transient anlysis:
+<img width="519" height="638" alt="image" src="https://github.com/user-attachments/assets/d4881884-03e5-4b22-95ab-bd814dc625a8" />
 
+
+
+### Ac anlysis :
+<img width="507" height="654" alt="image" src="https://github.com/user-attachments/assets/90b2816d-b883-4ada-9df6-558d99c0b787" />
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Day-2
 
