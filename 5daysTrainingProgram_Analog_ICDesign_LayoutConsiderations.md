@@ -1,4 +1,4 @@
-<img width="507" height="654" alt="image" src="https://github.com/user-attachments/assets/572a9018-8caf-4b35-9c4e-4c4321cf77b7" /><img width="519" height="638" alt="image" src="https://github.com/user-attachments/assets/05224bae-7d85-4cbf-9f42-8e5b2a929c67" /># Day 1
+<img width="992" height="826" alt="image" src="https://github.com/user-attachments/assets/4d054a66-4f93-4b49-920e-eefd3fb224fb" /># Day 1
 
 
 
@@ -225,6 +225,8 @@ We started with a simple resistor-MOSFET circuit and created its schematic in Ca
 Building on the previous day’s simple amplifier, the resistive load was replaced with a PMOS load to analyze MOSFET-based active loading.
 <img width="640" height="537" alt="image" src="https://github.com/user-attachments/assets/72515dd8-7469-42ff-99d9-1b024cf6aad1" />
 
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 In the previous circuit, the diode-connected PMOS was replaced by an externally biased PMOS. Since the PMOS threshold voltage **V_th_p is −561.778 mV** and the source voltage of pmos**V_s_p is 1v = Vdd** thus using this we need to calculte the value of vbias so that ass the circuit will be saturation region 
 
@@ -337,8 +339,11 @@ so to make deriv(vref) = 0
  (1+R_2/R_3) = 8.4569
  let keep R_2=10k ohm itself
  then **R_3= 1.34102 k ohm **
+ 
+<img width="992" height="826" alt="image" src="https://github.com/user-attachments/assets/bc532158-8410-4305-9176-12b9af4767cb" />
 
  Now we get,   **deriv(vref)=-19.66 uV/celcius**
+ 
  
 
 
