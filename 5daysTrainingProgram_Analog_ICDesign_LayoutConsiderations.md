@@ -1,4 +1,4 @@
-<img width="992" height="826" alt="image" src="https://github.com/user-attachments/assets/4d054a66-4f93-4b49-920e-eefd3fb224fb" /># Day 1
+# Day 1
 
 
 
@@ -222,8 +222,26 @@ We started with a simple resistor-MOSFET circuit and created its schematic in Ca
 - Symbol creation for a differential amplifier
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Building on the previous day’s simple amplifier, the resistive load was replaced with a PMOS load to analyze MOSFET-based active loading.
-<img width="640" height="537" alt="image" src="https://github.com/user-attachments/assets/72515dd8-7469-42ff-99d9-1b024cf6aad1" />
+Building on the previous day’s simple amplifier, the resistive load was replaced with a PMOS load to analyze MOSFET-based active loading and we have used didoe connected model to ensure pmos alwasy is in Saturation region.
+
+<img width="862" height="677" alt="image" src="https://github.com/user-attachments/assets/8e364e12-daf2-41b6-bb75-13cc651299bb" />
+
+
+#### Transient responce
+<img width="862" height="677" alt="image" src="https://github.com/user-attachments/assets/57d83a71-2b7d-4fe9-a346-c6125a57adde" />
+
+#### DC responce 
+<img width="862" height="677" alt="image" src="https://github.com/user-attachments/assets/da0a7764-7f38-4970-a84e-362427d7da11" />
+
+#### AC responce
+<img width="862" height="677" alt="image" src="https://github.com/user-attachments/assets/0a4c20a8-5d40-478d-baa2-a81658f7f692" />
+
+Before we got vout =0.435v so now our goal is to get vout=0.5v hence by avrying width of pmos we can vary its resistance hence a parametric anlysis is done to obtain the corrsponding for whcih vout is 0.5v
+<img width="862" height="677" alt="image" src="https://github.com/user-attachments/assets/fe9563a8-7427-4c9f-9d58-ffc347a007b3" />
+from above plot we observed for a **w of 1um**we will get nearly 0.5v.
+
+
+
 
 
 
