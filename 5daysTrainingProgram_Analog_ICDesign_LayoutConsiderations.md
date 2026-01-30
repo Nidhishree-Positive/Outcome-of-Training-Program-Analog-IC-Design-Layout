@@ -237,7 +237,9 @@ Building on the previous day’s simple amplifier, the resistive load was replac
 <img width="862" height="677" alt="image" src="https://github.com/user-attachments/assets/0a4c20a8-5d40-478d-baa2-a81658f7f692" />
 
 Before we got vout =0.435v so now our goal is to get vout=0.5v hence by avrying width of pmos we can vary its resistance hence a parametric anlysis is done to obtain the corrsponding for whcih vout is 0.5v
-<img width="862" height="677" alt="image" src="https://github.com/user-attachments/assets/fe9563a8-7427-4c9f-9d58-ffc347a007b3" />
+<img width="1000" height="649" alt="image" src="https://github.com/user-attachments/assets/ebc382fb-2c1b-4605-8400-dc83936675f2" />
+
+
 from above plot we observed for a **w of 1um**we will get nearly 0.5v.
 
 
