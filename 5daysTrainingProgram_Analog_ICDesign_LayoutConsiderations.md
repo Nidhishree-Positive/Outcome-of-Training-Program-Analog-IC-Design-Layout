@@ -66,7 +66,7 @@ This connection gives the BGR a strong physical foundation, making it inherently
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-### Why Is BGR So Important in IC Design?
+### Why is BGR So Important in IC Design?
 
 The Bandgap Reference acts as the heart of an integrated circuit. Once a stable reference is available, designers can build:
 
@@ -265,7 +265,7 @@ and run and obtain the region in which each transistors is opearting and wegot t
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-we designed a differentila amplifier
+we implemented a simple differentila amplifier
 here **v_th_n = 587.807mv and v_th_p=-573.335 mv**
 thus lets consider transitor 5(M_5) 
 here to turn on M5 V_gs_n5>v_th_n
@@ -281,12 +281,31 @@ for M_3 ,
 V_gs_n3 > v_th_n
 vg_3 - vs_3 > 587.807mv
 here vs_3=v_A = 0.6587v
-thus vg_3  > 1.2466 v
+thus vg_3  > 1.2466 v ,so consider  vg_3 = 1.3v.
+<img width="644" height="475" alt="image" src="https://github.com/user-attachments/assets/a0d0f3d5-fd1a-4e00-aef6-5101b1517472" />
+##### Transient & AC analysis 
+<img width="1600" height="688" alt="image" src="https://github.com/user-attachments/assets/5376eeec-027f-4809-9e75-d0a832bb52bd" />
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Creation of Symbol
 
 The designed differential amplifier was converted into a symbol and reused at the top level. The same input signals and biasing conditions as the original differential amplifier were applied, and the simulation results obtained using the symbol matched the original circuit behavior, thereby validating the symbol creation.
+
+
+First remove power supply and input and output connect pin to them 
+<img width="797" height="624" alt="image" src="https://github.com/user-attachments/assets/bac183a4-4f6d-4d36-98e2-80f695a09233" />
+
+then go to create then cell view in that from cell view and create a symbol and provide the shape you want 
+<img width="1201" height="657" alt="image" src="https://github.com/user-attachments/assets/2ae4fd6e-9d4d-4168-b5a9-87db7ecdb501" />
+
+Above circuit is tehe differerntial amplififer we implemented before but we haev used symbol 
+##### Transient & AC analysis 
+
+<img width="1600" height="679" alt="image" src="https://github.com/user-attachments/assets/642b82a4-aa15-444b-83a4-17a789d07263" />
+
+As we can see the simulation output is same as our previous differential amplifier cicruit .
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Day - 3
