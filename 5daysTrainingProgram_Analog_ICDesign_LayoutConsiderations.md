@@ -389,7 +389,7 @@ so to make deriv(vref) = 0
  
 <img width="992" height="826" alt="image" src="https://github.com/user-attachments/assets/bc532158-8410-4305-9176-12b9af4767cb" />
 
- Now we get,   **deriv(vref)=-19.66 uV/celcius**
+ Now we get,   **deriv(vref)=-19.66 uV/celcius** 
  
  
 
