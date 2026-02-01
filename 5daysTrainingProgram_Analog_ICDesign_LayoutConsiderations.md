@@ -392,7 +392,7 @@ so to make deriv(vref) = 0
  Now we get,   **deriv(vref)=-19.66 uV/celcius** 
  
  
-### Day-4  : IC Layout Design in Cadence Virtuoso
+### Day-4 & 5  : IC Layout Design in Cadence Virtuoso
 
 On Day-4, we explored IC Layout Design using Cadence Virtuoso. The session began with an overview of the complete IC design lifecycle, explaining how a circuit evolves from specification to fabrication. The importance of layout in determining performance, reliability, and manufacturability was emphasized.
 
