@@ -392,38 +392,80 @@ so to make deriv(vref) = 0
  Now we get,   **deriv(vref)=-19.66 uV/celcius** 
  
  
-### Day-4
+### Day-4  : IC Layout Design in Cadence Virtuoso
 
-On Day-4, we were introduced to IC Layout Design using Cadence Virtuoso. The session began with an introductory class on the complete IC design life cycle, explaining how a circuit evolves from specification to fabrication. The importance of layout in determining circuit performance, reliability, and manufacturability was emphasized.
+On Day-4, we explored IC Layout Design using Cadence Virtuoso. The session began with an overview of the complete IC design lifecycle, explaining how a circuit evolves from specification to fabrication. The importance of layout in determining performance, reliability, and manufacturability was emphasized.
 
-We then learned the key steps involved in the IC layout flow, including:
+We learned the key steps in the IC layout flow:
 
-**Floorplanning** – deciding the placement of major blocks and devices to optimize area, symmetry, and signal flow.
+**Floorplanning** – Deciding the placement of major blocks and devices to optimize area, symmetry, and signal flow.
 
-**Placement** – arranging transistors and components while considering matching, parasitics, and design rules.
+**Placement** – Arranging transistors and components while considering matching, parasitics, and design rules.
 
-**Routing** – creating interconnections between devices using metal layers while minimizing resistance, capacitance, and interference.
+**Routing** – Creating interconnections between devices using metal layers, while minimizing resistance, capacitance, and interference.
 
-**DRC (Design Rule Check)** – ensuring the layout follows foundry design rules.
+**DRC (Design Rule Check)** – Ensuring the layout follows foundry design rules.
 
-**LVS (Layout vs Schematic)** – verifying that the layout matches the schematic electrically.
+**LVS (Layout vs Schematic)** – Verifying that the layout matches the schematic electrically.
 
-The session provided a clear understanding of how layout decisions directly impact analog circuit performance, such as matching, noise, and parasitic effects. This day laid a strong foundation for practical layout implementation in Cadence.
-
-
-
-
- 
+This session highlighted how layout decisions directly impact analog circuit performance, particularly in terms of matching, noise, and parasitic effects, providing a strong foundation for practical layout implementation.
 
 
 
 
+#### OP-AMP Layout
 
+We implemented the layout for the op-amp designed earlier, consisting of:
 
+**Current Source**: PMOS
 
+**Differential Pair**: NMOS
 
+**Tail Current Source**: PMOS
 
+###### Floorplanning
 
+The layout was divided into three functional regions corresponding to the blocks above.
+
+Power and signal flow were planned vertically to maintain symmetry and simplify routing.
+
+Spacing and guard regions were included to reduce noise coupling.
+
+###### Placement
+
+Differential input transistors are placed symmetrically in the lower section, using common-centroid-like placement to improve matching.
+
+Biasing and current mirror circuits are placed centrally to ensure equal current distribution.
+
+Load and output stage transistors are positioned in the upper section for clean signal routing.
+
+Identical devices are arranged in parallel and mirrored structures to reduce process-induced mismatch.
+
+<img width="538" height="568" alt="Op-amp Placement" src="https://github.com/user-attachments/assets/68752275-65da-49dd-9dd4-6bd792aa3fe7" />
+
+###### DRC Errors
+
+After running DRC, the following errors were detected:
+
+<img width="1022" height="498" alt="DRC Errors" src="https://github.com/user-attachments/assets/7b439276-53be-4b3b-8359-9e8a7eac5b7d" />
+
+###### Routing
+
+Power lines (VDD) use wider metal tracks to reduce IR drop.
+
+Sensitive input signals (Vin+ / Vin−) are routed symmetrically and kept short to minimize parasitic capacitance.
+
+Higher metal layers are used for longer interconnections, while lower layers are used for local connections.
+
+###### Layout Considerations
+
+Matching-critical devices share the same orientation, well, and surroundings.
+
+Dummy devices and well ties are used to improve uniformity.
+
+The layout is prepared to pass DRC and LVS, ensuring physical and electrical correctness.
+
+This layout demonstrates that proper floorplanning, symmetric placement, and careful routing are essential for achieving high-performance analog designs, especially in op-amp circuits.
 
 
 
