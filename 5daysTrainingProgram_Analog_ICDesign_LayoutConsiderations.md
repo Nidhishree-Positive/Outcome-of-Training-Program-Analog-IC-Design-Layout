@@ -392,6 +392,23 @@ so to make deriv(vref) = 0
  Now we get,   **deriv(vref)=-19.66 uV/celcius** 
  
  
+### Day-4
+
+On Day-4, we were introduced to IC Layout Design using Cadence Virtuoso. The session began with an introductory class on the complete IC design life cycle, explaining how a circuit evolves from specification to fabrication. The importance of layout in determining circuit performance, reliability, and manufacturability was emphasized.
+
+We then learned the key steps involved in the IC layout flow, including:
+
+**Floorplanning** – deciding the placement of major blocks and devices to optimize area, symmetry, and signal flow.
+
+**Placement** – arranging transistors and components while considering matching, parasitics, and design rules.
+
+**Routing** – creating interconnections between devices using metal layers while minimizing resistance, capacitance, and interference.
+
+**DRC (Design Rule Check)** – ensuring the layout follows foundry design rules.
+
+**LVS (Layout vs Schematic)** – verifying that the layout matches the schematic electrically.
+
+The session provided a clear understanding of how layout decisions directly impact analog circuit performance, such as matching, noise, and parasitic effects. This day laid a strong foundation for practical layout implementation in Cadence.
 
 
 
